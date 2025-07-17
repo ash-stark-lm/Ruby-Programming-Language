@@ -13,3 +13,12 @@ puts ("hello " + name + " how are you?") #hello ashish how are you?
 
 age=gets.chomp() # it will be taken as a string
 puts("hello "+ name+ " you are "+age+" years old") # hence all are string and concatenated
+
+# Take space-separated input
+puts "Enter three numbers separated by space:"
+input = gets.chomp
+
+# Convert input string to an array of integers
+numbers = input.split.map(&:to_i)
+
+puts(numbers)
